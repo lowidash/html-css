@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: white;
+            padding:10px;
+            margin:10px;
+        }
+        main{
+            background-color: white;
+            padding:10px;
+            margin:10px;
+            border-radius:20px;/*a tag aqui, se parar pra pensar isso aqui é uma shorthand pq tbm existe a possibilidade de determinar o valor das bordas separadamente tipo border-radius: 10px 15px 20px 25px;
+
+            tamben tem a configuração dupla: border-radius: 10px 40px (na diagonal),*/
+        }
+        article{
+            background-color:black;
+        }
+        article>aside{
+            background-color:beige;
+            padding:5px;
+        }
+        nav{
+            background-color: rgb(178, 171, 171);
+            padding:3px;
+            box-shadow:5px 5px 5px black;
+        }/*Shorthand: deslocamento horizntal, vertical, espalhamento e cor
+        
+        se quiser que a sombra fique com efeito afundado, antes da shorthand colocamos inset*/
+        nav>a{
+            text-decoration: none;
+            color:white;
+            font-weight:bold;
+        }
+        nav>a:hover{
+            text-decoration:underline;
+        }
+        footer{
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:1px;
+            margin:0px;
+        }
+        footer>p{
+            margin:0px;
+        }
+        div#bola{
+            height:100px;
+            width:100px;
+            background-color: white;
+            margin:10px;
+            border-radius:50%;
+        }
+    </style>
+
+</head>
++6<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav><!--Muito usado como uma separação para se colocar os links de um menu no cabeçalho-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+
+
+    <main>
+    <section id="assuntos">
+
+    </section> <!--Seção-->
+    <section id="noticias">
+        <article> <!--Artigo, não entendi se é voltado pra notícias (provavelmente é)-->
+            <aside> <!--Conteúdo referente ao artigo, mas periférico SLA-->
+               <p>Artigo escrito por lulu coqueluche</p>
+            </aside>
+
+            <!--Todas essas PATAQUADAS  GROUPING TAGS são voltadas pra organização do site-->
+        </article>
+
+    </section>
+
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido pela Luluzinha</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

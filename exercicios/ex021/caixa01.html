@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width:300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*shorthand nessa ordem mesmo*/
+
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*shorthand, mesma ordem*/
+
+            margin-top: 10px; /*Um tipo de afastamento além do acolchoamento, indicado pra sla, que algum efeito da linha de baixo não encoste na linha de cima*/
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; 
+
+            /*shorthand t,r,b,l ou t,auto,b,auto
+            justamente pra centralizar a caixa*/
+            
+            margin:auto; /*Centraliza A CAIXA, é diferente de quando se alinha só o texto no centro*/
+
+            outline-width: 40px; /*Dentro da margem, achei que da pra criar umas composições gráficas bem legaizinhas,se quiser aumentá-lo somente pela margem*/
+            outline-style: dashed;
+            outline-color: chocolate;
+
+            /*shorthand nessa ordem mermo
+            
+            assim, na aula ele ensina que uma coisa em bloco ou inline podem se inverter a partir da tag display:inline ou block; ok algim dia isso pode me ser útil but i think no*/
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level </a> Vamos ver como isso tudo funciona.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir essa imagem em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador</p>
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Pq menos de 750 vai abrir a menor -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Pq menos de 1050 vai abrir essa -->
+        <img src="imagens/foto-g.png" alt="imagem flexível"> 
+    </picture>
+
+    <!--OK, dessa vez teve muita informação, vamos recaptular. Aqui criamos imagems dinamicas, ou seja, a depender da tela que vc abrir, ela muda, essa mudança é baseada nos tamanhos. Isso nos daria mais trabalho? Daria! Mas é imprescindível esse tipo de detalhe pra experiencia do usuário
+    1- Abrimos a tag <picture> ela indica que vamos trabalhar com imagens dentro dela
+    2- Usamos a clássica <img> e nela, colocaremos primeiro a maior imagem produzida, no caso a G.
+    3- Encima dela abriremos a mídia <source media type> 
+    Além disso, começamos sempre da maior imagem para a menor, como uma piramide-->
+
+    <h1> Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/happy-mistake.mp3" autoplay></audio>
+</body>
+</html>

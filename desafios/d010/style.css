@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+@font-face {
+    font-family:'nugget' ;
+    src: url('idroid.otf') format('opentype');
+}
+
+header{
+    color:white;
+    text-align: center;
+    background-image: linear-gradient(rgb(12, 180, 29), rgb(1, 107, 48));
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+header>p{
+    color:rgb(192, 192, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    
+}
+header>h1{
+    font-family: "Bebas Neue";
+    font-weight: lighter;
+}
+nav{
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav>a{
+    color:rgb(216, 212, 212);
+    text-decoration:none;
+    padding:15px;
+}
+nav>a:hover{
+    background-color: rgba(0, 200, 90, 0.278);
+    color:rgb(0, 66, 24);
+    padding-bottom: -60px;
+}
+ body{
+    background-color:#c5ebd6;
+    margin:auto;
+}
+  main{
+    background-color: white;
+    width:800px;
+    margin:auto;
+    box-shadow: 10px 15px 20px  rgba(0, 0, 0, 0.141);
+    
+  }
+  main>p{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    padding:15px;
+    margin:-16px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  main>p>a{
+    color:darkgreen;
+    font-weight:bold;
+    text-decoration: none;
+  }
+  main>p>a:hover{
+    text-decoration: underline;
+    background-color: rgb(0, 48, 5);
+    color:white;
+  }
+  main>h1{
+    font-family:'nugget';
+    color:darkgreen;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin:0%;
+
+  }
+  main>h2{
+    background-image: linear-gradient(to right, rgba(201, 230, 195, 0.91), rgba(172, 228, 167, 0.125));
+    color:darkgreen;
+    font-family: 'nugget';
+    padding-left:20px;
+  }
+  div#video{
+    display:block;
+  background-color: rgb(8, 61, 0);
+  width:1200px;
+  margin:auto;
+  box-shadow: 10px 15px 20px  rgba(0, 0, 0, 0.141);
+  padding-top: ;
+  }
+  iframe{
+    display:block;
+    margin:auto;
+  }
+  footer{
+    background-color:rgb(1, 107, 48) ;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom:35px;
+    padding-top:5px;
+    margin:auto;
+    
+    }
+    

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight:bold;
+        }
+        a:visited{      /*cor que vai ficar quando o link ja tiver sido visitado*/
+            color:darkred;
+
+        }
+        a:hover{   /*Pra fixar, hover é uma pseudoclasse destinada a quando o mouse for passado, ou seja, as alterações que vc quer q acontecem com o passar do mouse, podendo ser as mais variadas*/
+            text-decoration:underline;
+        }
+        a:active{ /*A cor que o link vai ficar quando ele for clicado*/
+
+            /*Pseudo-classes são palavars que definem ESTADOS DE ELEMENTOS*/
+            color:yellow;
+        }
+
+        a::after{ /*Pseudo-elemento, usamos :: duas vezes*/
+            content:'[link]';
+            text-decoration: none;
+            font-weight:normal;
+            color:darkgray;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>   
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório Githib</a></li>
+        <li><a href="https://youtbe.com/cursoemvideo/">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do CursoemVídeo</a></li>
+    </ul>
+</body>
+</html>
